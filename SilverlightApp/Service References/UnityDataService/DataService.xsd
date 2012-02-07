@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfUnityInterception" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfUnityInterception" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/WcfUnityInterception/DataService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WcfUnityInterception.Service" />
+  <xs:complexType name="GetLiquidsLevelRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLiquidsLevelRequest" nillable="true" type="tns:GetLiquidsLevelRequest" />
+  <xs:complexType name="RequestBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RequestBase" nillable="true" type="tns:RequestBase" />
+  <xs:complexType name="ResponseBaseOfLiquidsDataContractRejCuY8G">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResponseBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfUnityInterception" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="LiquidsDataContract" Namespace="http://schemas.datacontract.org/2004/07/WcfUnityInterception" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Error" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Response" nillable="true" type="tns:LiquidsDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseBaseOfLiquidsDataContractRejCuY8G" nillable="true" type="tns:ResponseBaseOfLiquidsDataContractRejCuY8G" />
+  <xs:complexType name="LiquidsDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Level" type="xs:double" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LiquidsDataContract" nillable="true" type="tns:LiquidsDataContract" />
+  <xs:complexType name="ReallyLongDataPullRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="WellNumber" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ReallyLongDataPullRequest" nillable="true" type="tns:ReallyLongDataPullRequest" />
+  <xs:complexType name="ResponseBaseOfReallyLongDataContract_SKWzW3O6">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResponseBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfUnityInterception" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ReallyLongDataContract" Namespace="http://schemas.datacontract.org/2004/07/WcfUnityInterception.Service" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Error" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfUnityInterception.Service" minOccurs="0" name="Response" nillable="true" type="q1:ReallyLongDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseBaseOfReallyLongDataContract_SKWzW3O6" nillable="true" type="tns:ResponseBaseOfReallyLongDataContract_SKWzW3O6" />
+  <xs:complexType name="ArrayOfLiquidsDataContract">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LiquidsDataContract" nillable="true" type="tns:LiquidsDataContract" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLiquidsDataContract" nillable="true" type="tns:ArrayOfLiquidsDataContract" />
+</xs:schema>

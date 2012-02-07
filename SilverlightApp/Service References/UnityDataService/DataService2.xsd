@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/WcfUnityInterception/DataService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfUnityInterception" />
+  <xs:element name="GetLiquidsLevel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfUnityInterception" minOccurs="0" name="request" nillable="true" type="q1:GetLiquidsLevelRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLiquidsLevelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfUnityInterception" minOccurs="0" name="GetLiquidsLevelResult" nillable="true" type="q2:ResponseBaseOfLiquidsDataContractRejCuY8G" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReallyLongDataPull">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfUnityInterception" minOccurs="0" name="request" nillable="true" type="q3:ReallyLongDataPullRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReallyLongDataPullResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfUnityInterception" minOccurs="0" name="ReallyLongDataPullResult" nillable="true" type="q4:ResponseBaseOfReallyLongDataContract_SKWzW3O6" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

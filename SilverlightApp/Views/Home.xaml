@@ -1,0 +1,33 @@
+﻿<navigation:Page x:Class="SilverlightApp.Home" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+    mc:Ignorable="d" d:DesignWidth="635" d:DesignHeight="568"
+    Title="Home"
+    Style="{StaticResource PageStyle}" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+    <Grid Height="519" Name="grid1" Width="628">
+        <sdk:Label Height="28" HorizontalAlignment="Left" Margin="16,98,0,0" Name="lblUserName" VerticalAlignment="Top" Width="79" Content="User Name:" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="100,94,0,0" Name="txtUserName" VerticalAlignment="Top" Width="120" />
+        <sdk:Label Content="Tank Id:" Height="28" HorizontalAlignment="Left" Margin="30,179,0,0" Name="label1" VerticalAlignment="Top" Width="63" HorizontalContentAlignment="Right" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="100,175,0,0" Name="txtTankId" VerticalAlignment="Top" Width="120" />
+        <sdk:Label Height="46" HorizontalAlignment="Left" Margin="12,230,0,0" Name="lblTankInfo" VerticalAlignment="Top" Width="589" Content="Enter a user name and tank id..." />
+        <Button Content="Get Tank Info" Height="23" HorizontalAlignment="Left" Margin="242,175,0,0" Name="btnGetTankInfo" VerticalAlignment="Top" Width="94" Click="btnGetTankInfo_Click" />
+        <sdk:Label Height="44" HorizontalAlignment="Left" Margin="18,0,0,0" Name="label2" VerticalAlignment="Top" Width="518" Content="Let's access some data through WCF!" FontSize="26" />
+        <sdk:Label Height="28" HorizontalAlignment="Left" Margin="12,200,0,0" Name="label3" VerticalAlignment="Top" Width="209" Content="(Don't enter an Id over 100!!!)" />
+        <sdk:Label Height="28" HorizontalAlignment="Left" Margin="16,141,0,0" Name="label5" VerticalAlignment="Top" Width="320" Content="Tank Information" FontSize="15" />
+        <sdk:Label Content="Enter User Name" FontSize="15" Height="28" HorizontalAlignment="Left" Margin="12,60,0,0" Name="label6" VerticalAlignment="Top" Width="320" />
+        <sdk:Label Content="Well Information" FontSize="15" Height="28" HorizontalAlignment="Left" Margin="16,278,0,0" Name="label4" VerticalAlignment="Top" Width="320" />
+        <sdk:Label Height="28" Margin="34,312,534,0" Name="label7" VerticalAlignment="Top" Content="Well Id:" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="100,308,0,0" Name="txtWellId" VerticalAlignment="Top" Width="120" />
+        <sdk:DataGrid ItemsSource="{Binding LiquidsDataContracts}"
+                      AutoGenerateColumns="true" 
+                      Height="100" 
+                      HorizontalAlignment="Left" 
+                      Margin="30,358,0,0" 
+                      Name="dataGrid1" VerticalAlignment="Top" Width="559" />
+        <Button Content="Get Well Info" Height="24" HorizontalAlignment="Left" Margin="242,307,0,0" Name="btnGetWellInfo" VerticalAlignment="Top" Width="94" Click="btnGetWellInfo_Click" />
+        <sdk:Label Height="28" HorizontalAlignment="Left" Margin="30,478,0,0" Name="lblEditWellInfo" VerticalAlignment="Top" Width="120" Content="Edit Well Info:" Visibility="Collapsed" />
+        <Button Content="Edit..." Height="23" HorizontalAlignment="Left" Margin="178,478,0,0" Name="btnEditWellInfo" VerticalAlignment="Top" Width="75" Visibility="Collapsed" />
+    </Grid>
+</navigation:Page>

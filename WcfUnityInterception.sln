@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfUnityInterception", "WcfUnityInterception\WcfUnityInterception.csproj", "{5468BBEE-B781-4A6C-954B-7BD562BCB2D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightApp", "SilverlightApp\SilverlightApp.csproj", "{56DE712B-E070-4DF6-AEB3-C3EC77C897A5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5468BBEE-B781-4A6C-954B-7BD562BCB2D6} = {5468BBEE-B781-4A6C-954B-7BD562BCB2D6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5468BBEE-B781-4A6C-954B-7BD562BCB2D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5468BBEE-B781-4A6C-954B-7BD562BCB2D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5468BBEE-B781-4A6C-954B-7BD562BCB2D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5468BBEE-B781-4A6C-954B-7BD562BCB2D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56DE712B-E070-4DF6-AEB3-C3EC77C897A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56DE712B-E070-4DF6-AEB3-C3EC77C897A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56DE712B-E070-4DF6-AEB3-C3EC77C897A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56DE712B-E070-4DF6-AEB3-C3EC77C897A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35;packages\Unity.Interception.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal

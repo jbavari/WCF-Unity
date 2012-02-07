@@ -1,0 +1,13 @@
+c:\users\jbavari\documents\visual studio 2010\Projects\WcfUnityInterception\WcfUnityInterception\obj\Debug\ResolveAssemblyReference.cache
+c:\users\jbavari\documents\visual studio 2010\Projects\WcfUnityInterception\WcfUnityInterception\bin\WcfUnityInterception.dll
+c:\users\jbavari\documents\visual studio 2010\Projects\WcfUnityInterception\WcfUnityInterception\bin\WcfUnityInterception.pdb
+c:\users\jbavari\documents\visual studio 2010\Projects\WcfUnityInterception\WcfUnityInterception\bin\Microsoft.Practices.ServiceLocation.dll
+c:\users\jbavari\documents\visual studio 2010\Projects\WcfUnityInterception\WcfUnityInterception\bin\Microsoft.Practices.Unity.dll
+c:\users\jbavari\documents\visual studio 2010\Projects\WcfUnityInterception\WcfUnityInterception\bin\Microsoft.Practices.Unity.Interception.dll
+c:\users\jbavari\documents\visual studio 2010\Projects\WcfUnityInterception\WcfUnityInterception\bin\Microsoft.Practices.Unity.xml
+c:\users\jbavari\documents\visual studio 2010\Projects\WcfUnityInterception\WcfUnityInterception\bin\Microsoft.Practices.Unity.Interception.xml
+c:\users\jbavari\documents\visual studio 2010\Projects\WcfUnityInterception\WcfUnityInterception\obj\Debug\WcfUnityInterception.dll
+c:\users\jbavari\documents\visual studio 2010\Projects\WcfUnityInterception\WcfUnityInterception\obj\Debug\WcfUnityInterception.pdb
+c:\Users\jbavari\Documents\Visual Studio 2010\Projects\WcfUnityInterception\WcfUnityInterception\bin\Microsoft.Practices.ServiceLocation.pdb
+c:\Users\jbavari\Documents\Visual Studio 2010\Projects\WcfUnityInterception\WcfUnityInterception\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\jbavari\documents\visual studio 2010\Projects\WcfUnityInterception\WcfUnityInterception\bin\FizzWare.NBuilder.dll
